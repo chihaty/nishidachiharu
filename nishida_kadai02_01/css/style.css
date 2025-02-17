@@ -1,0 +1,69 @@
+@charset "utf-8";
+header {
+    display: flex;
+    max-width: 960px;
+    margin: 0px auto;
+    justify-content: space-between;
+}
+h1 {
+    padding: 20px 0px 20px 80px;
+}
+ul {
+    display: flex;
+    list-style: none;
+    padding: 20px 0px;
+}
+li {
+    padding: 5px 20px;
+    border-right: 1px solid #4c4c4c;
+}
+li:last-child {
+    border-right: none;
+}
+/* メディアクエリ */
+@media screen and (max-width: 767px) {
+    header {
+        display: block;
+    }
+    h1 {
+        padding: 20px 10px 5px;
+    }
+    ul {
+        flex-direction: column;
+        padding: 0px;
+        width: 40%;
+    }
+    li {
+        border-right: none;
+        border-bottom: 1px solid #4c4c4c;
+        padding: 5px 10px;
+    }
+}
+/* メイン */
+main {
+    max-width: 960px;
+    margin: 0px auto;
+}
+/* 青い箱３個 */
+.wrap1 {
+    display: flex;
+    justify-content: space-between;
+}
+.bluebox {
+    background: blue;
+    width: 31%;
+    height: 300px;
+    margin-top: 30px;
+}
+/* 赤い箱６個 */
+.wrap2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.redbox {
+    background: red;
+    width: 31%;
+    height: 300px;
+    margin-top: 30px;
+}
